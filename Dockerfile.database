@@ -1,9 +1,5 @@
 FROM mysql:8.0
 
-WORKDIR /app
-
-COPY ./config/update.sql ./
-COPY ./config/init.sql ./
-COPY ./config/update.sh ./
+WORKDIR /app/update
 
 CMD ["mysqld"]

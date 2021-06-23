@@ -31,8 +31,10 @@ CREATE TABLE IF NOT EXISTS Session (
     CourseID int(10) NOT NULL,
     Title varchar(255) NOT NULL,
     Description varchar(255) NOT NULL,
-    Date Date,
-    Link varchar(255) NOT NULL
+    Date Date NOT NULL,
+    Duration int(10) NOT NULL,
+    Link varchar(255) NOT NULL,
+    FOREIGN KEY (CourseID) REFERENCES Course (CourseID)
 );
 
 CREATE TABLE IF NOT EXISTS UserCourse (
