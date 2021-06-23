@@ -1,4 +1,4 @@
-CREATE DATABASE db;
+CREATE DATABASE IF NOT EXISTS db;
 use db;
 
 /*
