@@ -68,6 +68,6 @@ VALUES ("zsant014@fiu.edu", 1);
 /* -------------------------------------------------- */
 
 CREATE TABLE IF NOT EXISTS Auth (
-    UserID int(10) NOT NULL,
-    Token varchar(255) NOT NULL UNIQUE
+    UserID int(10) UNIQUE NOT NULL,
+    Token varchar(255) NOT NULL
 );
