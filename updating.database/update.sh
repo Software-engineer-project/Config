@@ -1,2 +1,2 @@
 #!/bin/bash
-mysql -prootpassword db < /app/update.sql
+mysql -prootpassword db < /app/update/update.sql
